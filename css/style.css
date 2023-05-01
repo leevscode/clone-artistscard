@@ -30,9 +30,33 @@ body {
   line-height: 1.4;
   word-break: keep-all;
 }
+/* 공용클래스 */
 .inner {
+  max-width: 1360px;
   margin: 0 auto;
 }
 .pd-40 {
   padding: 0 40px;
+}
+.clearfix::after {
+  display: block;
+  position: relative;
+  content: "";
+  width: 100%;
+  clear: both;
+}
+/* 아티스트 */
+.artist-top {
+  display: block;
+  text-align: center;
+  font-size: 0;
+}
+.artist-top svg {
+  display: inline-block;
+}
+.artist-top span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
 }
