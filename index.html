@@ -37,6 +37,11 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -183,7 +188,7 @@
       <!-- 아티스트 -->
       <section class="artist">
         <div class="inner">
-          <b class="artist-top">
+          <div class="artist-top">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="105"
@@ -203,16 +208,85 @@
                 style="fill: rgb(8, 8, 13)"
               ></path>
             </svg>
-            <br/>
+            <br />
             <span>내가 좋아하는 아티스트의 굿즈를 찾아보아요!</span>
           </div>
-          <div class="artist-mid"></div>
-          <div class="artist-bottom"></div>
+          <div class="artist-mid">
+            <ul>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_1.png" alt="아티스트1" />
+                  </div>
+                  <div class="artist-name"><span>IVE</span></div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_2.png" alt="아티스트2" />
+                  </div>
+                  <div class="artist-name"><span>LE SSERAFIM</span></div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_3.png" alt="아티스트3" />
+                  </div>
+                  <div class="artist-name"><span>NCT</span></div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_4.png" alt="아티스트4" />
+                  </div>
+                  <div class="artist-name"><span>SEVENTEEN</span></div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_5.png" alt="아티스트5" />
+                  </div>
+                  <div class="artist-name"><span>BTBO</span></div></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><div class="artist-img">
+                    <img src="images/artit/artist_6.png" alt="아티스트6" />
+                  </div>
+                  <div class="artist-name"><span>asepa</span></div></a
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="btn-more"><a href="#">더보기</a></button>
         </div>
       </section>
       <!-- //아티스트 -->
       <!-- 배너 -->
-      <section class="banner"></section>
+      <section class="banner">
+        <div class="swiper banner-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"
+                ><img src="images/banner/banner_1.png" alt="배너슬라이드1"
+              /></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"
+                ><img src="images/banner/banner_2.png" alt="배너슬라이드2"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <script>
+          var swiper = new Swiper(".banner-swiper", { loop: true });
+        </script>
+      </section>
       <!-- //배너 -->
       <!-- 언박싱 TV -->
       <section class="unboxing"></section>
