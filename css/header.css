@@ -10,6 +10,7 @@
 .header-top {
     border-bottom: 1px solid #eeeeee;
     height: 32px;
+    position: relative;
 }
 
 .header-top-container {
@@ -36,7 +37,6 @@
 
 .selector-arrow {
     margin-bottom: 1px;
-    fill: #707084;
 }
 
 .header-bottom {
@@ -58,7 +58,6 @@
 .logo,
 .btn-search,
 .btn-menu {
-    fill: #08080d;
     cursor: pointer;
 }
 
@@ -86,6 +85,45 @@
     background: #6727ba;
     border: 1px solid #6727ba;
     border-radius: 20px;
+}
+
+.header-lang-container {
+    display: none;
+    position: absolute;
+    top: 35px;
+}
+
+.header-lang-item {
+    margin-top: 15px;
+}
+
+.header-lang-item:first-child {
+    margin-top: 0;
+}
+
+.header-lang-list {
+    padding: 20px 15px 15px;
+    background: rgb(250, 250, 250);
+    border-radius: 5px;
+    box-shadow: rgba(8, 8, 13, 0.3) 5px 5px 15px 0px;
+    height: 320px;
+    overflow: hidden auto;
+}
+
+.header-lang-item-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-lang-item-container > span {
+    font-size: 13px;
+    margin-left: 6px;
+    color: rgb(8, 8, 13);
+}
+
+.header-lang-item-selected {
+    font-weight: bold;
+    color: rgb(103, 39, 186) !important;
 }
 
 @media screen and (max-width: 720px) {
