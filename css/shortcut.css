@@ -1,0 +1,25 @@
+/* 바로가기 */
+.shortcut {
+  display: block;
+  margin-top: 50px;
+}
+
+.shortcut-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shortcut-main a {
+  display: inline-block;
+  font-size: 13px;
+  text-align: center;
+}
+
+.shortcut-main img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 10px;
+}
+/* //바로가기 */
