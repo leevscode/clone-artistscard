@@ -1,4 +1,4 @@
-.artist .header {
+.artist .inner {
   text-align: center;
 }
 /* 아티스트 탑 */
@@ -25,10 +25,10 @@
 .artist-mid li {
   display: inline-block;
   margin-right: 40px;
+  /* font-size: 0; */
 }
 .artist-mid a {
   display: inline-block;
-  /* width: 180px; */
 }
 .artist-mid li:last-child {
   margin-right: 0;
@@ -54,7 +54,6 @@
 }
 .artist-mid img:hover {
   transform: scale(1.05);
-  /* background: rgba(0, 0, 0, 1); */
   opacity: 0.8;
 }
 .artist-name {
