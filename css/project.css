@@ -1,0 +1,29 @@
+/* 프로젝트 */
+
+.project-main {
+    display: flex;
+    justify-content: left;
+    
+}
+
+.pj-one > img {
+    display: block;
+    width: 407px;
+    height: 229px;
+    margin-bottom: 10px;
+}
+.pj-two > img {
+    margin-left: 20px;
+    display: block;
+    width: 407px;
+    height: 229px;
+}
+
+.d-day {
+    margin-top: 10px;
+    padding: 3px 7px;
+    color: #fafafa;
+    background: #6727ba;
+}
+
+/* //프로젝트 */
