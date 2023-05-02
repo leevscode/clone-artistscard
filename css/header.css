@@ -1,0 +1,156 @@
+.header .inner {
+    height: 100px;
+    max-width: 100%;
+    padding: 0;
+    position: fixed;
+    background: #fafafa;
+    z-index: 9999;
+}
+
+.header-top {
+    border-bottom: 1px solid #eeeeee;
+    height: 32px;
+    position: relative;
+}
+
+.header-top-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+    max-width: 1360px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header-top-container > * {
+    margin-left: 30px;
+    color: #707084;
+    font-size: 11px;
+}
+
+.header-lang-selector {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selector-arrow {
+    margin-bottom: 1px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    max-width: 1360px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.header-bottom-left,
+.header-bottom-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo,
+.btn-search,
+.btn-menu {
+    cursor: pointer;
+}
+
+.header-bottom-left-menu {
+    margin-left: 40px;
+}
+
+.header-bottom-left-menu > a {
+    font-size: 14px;
+    margin: 0 20px;
+    color: #08080d;
+}
+
+.btn-menu {
+    display: none;
+    margin-left: 10px;
+}
+
+.btn-login {
+    margin-left: 28px;
+    padding: 10px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fafafa;
+    background: #6727ba;
+    border: 1px solid #6727ba;
+    border-radius: 20px;
+}
+
+.header-lang-container {
+    display: none;
+    position: absolute;
+    top: 35px;
+}
+
+.header-lang-item {
+    margin-top: 15px;
+}
+
+.header-lang-item:first-child {
+    margin-top: 0;
+}
+
+.header-lang-list {
+    padding: 20px 15px 15px;
+    background: rgb(250, 250, 250);
+    border-radius: 5px;
+    box-shadow: rgba(8, 8, 13, 0.3) 5px 5px 15px 0px;
+    height: 320px;
+    overflow: hidden auto;
+}
+
+.header-lang-item-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-lang-item-container > span {
+    font-size: 13px;
+    margin-left: 6px;
+    color: rgb(8, 8, 13);
+}
+
+.header-lang-item-selected {
+    font-weight: bold;
+    color: rgb(103, 39, 186) !important;
+}
+
+@media screen and (max-width: 720px) {
+    .header .inner {
+        height: 60px;
+    }
+
+    .header-top-container,
+    .header-bottom {
+        padding: 0 15px;
+    }
+
+    .header-top,
+    .header-bottom-left-menu,
+    .btn-login {
+        display: none;
+    }
+
+    .header-bottom {
+        height: 60px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .btn-menu {
+        display: block;
+    }
+}
