@@ -47,7 +47,6 @@ body {
     padding: 0;
   }
 }
-
 .clearfix::after {
   display: block;
   position: relative;
