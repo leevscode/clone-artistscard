@@ -27,24 +27,25 @@ html {
   background: #fafafa;
 }
 body {
-    font-family: "Pretendard", sans-serif;
-    color: #000;
-    line-height: 1.4;
-    word-break: keep-all;
-    width: 100%;
+  font-family: "Pretendard", sans-serif;
+  color: #000;
+  line-height: 1.4;
+  word-break: keep-all;
+  width: 100%;
 }
 /* 공용클래스 */
 .inner {
-    width: 100%;
-    max-width: 1360px;
-    padding: 0 40px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1360px;
+  padding: 0 40px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 720px) {
-    .inner {
-        padding: 0;
-    }
+  .inner {
+    padding: 0;
+  }
 }
 .clearfix::after {
   display: block;
@@ -52,4 +53,16 @@ body {
   content: "";
   width: 100%;
   clear: both;
+}
+.btn-more {
+  display: inline;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 40px;
+  margin: 0 auto;
+  border: solid 1px rgba(238, 238, 238);
+  border-radius: 5px;
+  background: #fafafa;
+  cursor: pointer;
 }
