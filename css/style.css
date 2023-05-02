@@ -146,10 +146,10 @@ body {
   margin-top: 9px;
 }
 
-.brand-info > span {
+.icon-text {
   display: block;
   font-size: 14px;
-  margin-top: 4px;
+  margin-top: 7px;
   margin-bottom: 2px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -158,20 +158,70 @@ body {
   text-overflow: ellipsis;
 }
 
-.brand-info-img > img {
-  width: 25px;
-  height: 25px;
+.icon-text > span {
+  color: rgb(242, 130, 19);
 }
 
-.brand-info-img > .icon-text {
+.brand-info-img > img {
+  width: 20px;
+  height: 20px;
+}
+
+.brand-info-img > .icon-title {
   margin-left: 5px;
   font-size: 12px;
   color: #aaaaaa;
 }
 
-.Release {
+.release {
+  display: block;
   color: #707084;
   font-size: 12px;
+  margin-bottom: 5px;
+}
+.chart-h {
+  color: #4e69f6;
+  background: #dddbed;
+  font-size: 12px;
+  top: 10px;
+  left: 10px;
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+.chart-s {
+  color: #dc3a6d;
+  background: #fadde6;
+  font-size: 12px;
+  top: 10px;
+  left: 10px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.won-info {
+  margin-top: 7px;
+}
+
+.won {
+  font-size: 15px;
+}
+.price {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.price-bt {
+  color: #999999;
+  font-size: 12px;
+}
+
+.percent {
+  font-size: 18px;
+  color: #6727ba;
+  margin: 5px;
+  font-weight: 600;
 }
 
 /* //신상품 */
