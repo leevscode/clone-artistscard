@@ -1,3 +1,6 @@
+.artist .header {
+  text-align: center;
+}
 /* 아티스트 탑 */
 .artist-top {
   display: block;
@@ -30,7 +33,6 @@
 .artist-mid li:last-child {
   margin-right: 0;
 }
-
 .artist-img {
   position: relative;
   width: 180px;
