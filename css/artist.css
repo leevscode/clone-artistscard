@@ -1,0 +1,15 @@
+/* 아티스트 */
+.artist-top {
+    display: block;
+    text-align: center;
+    font-size: 0;
+}
+.artist-top svg {
+    display: inline-block;
+}
+.artist-top span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+}
