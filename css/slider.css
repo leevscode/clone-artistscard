@@ -1,7 +1,6 @@
-.slider .inner {
+.slider {
     width: 100%;
-    max-width: 100%;
-    padding: 100px 0 0;
+    padding-top: 100px;
 }
 
 .img-slider {
@@ -66,7 +65,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    .slider .inner {
+    .slider {
         padding-top: 60px;
     }
 

@@ -1,7 +1,6 @@
-.header .inner {
+.header {
     height: 100px;
-    max-width: 100%;
-    padding: 0;
+    width: 100%;
     position: fixed;
     background: #fafafa;
     z-index: 9999;
@@ -127,7 +126,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    .header .inner {
+    .header {
         height: 60px;
     }
 
