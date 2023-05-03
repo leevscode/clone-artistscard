@@ -10,7 +10,6 @@
 @import url("shortcut.css");
 @import url("slider.css");
 @import url("unboxing.css");
-@import url("project.css");
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +45,6 @@ body {
     padding: 0 40px;
     margin: 0 auto;
     padding-bottom: 60px;
-    text-align: center;
 }
 
 @media screen and (max-width: 720px) {
