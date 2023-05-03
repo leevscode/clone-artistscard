@@ -13,3 +13,8 @@
     height: 440px;
     background: pink;
 }
+
+.unboxing-link img {
+    width: 100%;
+    border-radius: 5px;
+}
