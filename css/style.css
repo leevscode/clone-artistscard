@@ -60,7 +60,7 @@ body {
     clear: both;
 }
 .btn-more {
-    display: inline;
+    display: block;
     height: 40px;
     font-size: 13px;
     font-weight: 700;
