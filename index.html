@@ -23,50 +23,55 @@
         <link rel="stylesheet" href="css/reset.css" />
         <script src="js/prefixfree.min.js"></script>
         <script src="js/respond.min.js"></script>
-        <link rel="stylesheet" href="css/style.css" />
         <script src="js/header.js"></script>
+        <script src="js/slider.js" type="module"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="wrap">
             <!-- 상단 -->
-
             <header class="header">
-                <div class="inner">
-                    <div class="header-top">
-                        <div class="header-top-container">
-                            <a href="#">SUPPORT</a>
-                            <a href="#">ABOUT</a>
-                            <div class="header-lang-selector">
-                                <span>대한민국 / KRW</span>
-                                <img class="selector-arrow" src="images/header/selector_arrow.svg" />
-                            </div>
-                            <div class="header-lang-container">
-                                <ul class="header-lang-list"></ul>
-                            </div>
+                <div class="header-top">
+                    <div class="header-top-container">
+                        <a href="#">SUPPORT</a>
+                        <a href="#">ABOUT</a>
+                        <div class="header-lang-selector">
+                            <span>대한민국 / KRW</span>
+                            <img class="selector-arrow" src="images/header/selector_arrow.svg" />
+                        </div>
+                        <div class="header-lang-container">
+                            <ul class="header-lang-list"></ul>
                         </div>
                     </div>
-                    <div class="header-bottom">
-                        <div class="header-bottom-left">
-                            <img class="logo" src="images/header/logo.svg" />
-                            <div class="header-bottom-left-menu">
-                                <a href="#">스페셜</a>
-                                <a href="#">스토어</a>
-                                <a href="#">언박싱</a>
-                            </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-left">
+                        <img class="logo" src="images/header/logo.svg" />
+                        <div class="header-bottom-left-menu">
+                            <a href="#">스페셜</a>
+                            <a href="#">스토어</a>
+                            <a href="#">언박싱</a>
                         </div>
-                        <div class="header-bottom-right">
-                            <img class="btn-search" src="images/header/btn_search.svg" />
-                            <img class="btn-menu" src="images/header/btn_menu.svg" />
-                            <a class="btn-login" href="#">로그인 / 가입</a>
-                        </div>
+                    </div>
+                    <div class="header-bottom-right">
+                        <img class="btn-search" src="images/header/btn_search.svg" />
+                        <img class="btn-menu" src="images/header/btn_menu.svg" />
+                        <a class="btn-login" href="#">로그인 / 가입</a>
                     </div>
                 </div>
             </header>
             <!-- //상단 -->
             <!-- 슬라이더 -->
-            <section class="slider"></section>
+            <section class="slider">
+                <div class="swiper swiper-slider">
+                    <div class="swiper-wrapper"></div>
+                    <img class="swiper-btn swiper-btn-prev" src="images/slider/prev.svg" />
+                    <img class="swiper-btn swiper-btn-next" src="images/slider/next.svg" />
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
             <!-- //슬라이더 -->
             <!-- 바로가기 -->
             <section class="shortcut">
@@ -327,7 +332,68 @@
             </section>
             <!-- //언박싱 TV -->
             <!-- 하단 -->
-            <footer class="footer"></footer>
+            <footer class="footer">
+                <div class="footer-info">
+                    <div class="footer-info-menu">
+                        <a href="#">회사 소개</a>
+                        <a href="#" class="footer-span-bold">개인정보 처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">유료 이용약관</a>
+                        <a href="#">쿠키정책</a>
+                        <a href="#">법적 고지</a>
+                        <a href="#">서비스 소개</a>
+                    </div>
+                    <div class="footer-info-text-container">
+                        <div class="footer-info-text">
+                            <span>사업자등록번호 :</span>
+                            <span>558-88-00394</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>통신판매업등록번호 :</span>
+                            <span>제 2018-성남수정-0398호</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>대표 :</span>
+                            <span>정연승</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>회사명 :</span>
+                            <span>(주)아티스츠카드</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>주소 :</span>
+                            <span>경기도 성남시 수정구 창업로 54 기업성장센터 523호</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>문의 :</span>
+                            <span>contact@artistscard.com</span>
+                        </div>
+                    </div>
+                    <div class="company-container">
+                        <a href="#"><img src="images/footer/hanteo.svg" alt="HANTEO" /></a>
+                        <a href="#"><img src="images/footer/circle_chart.svg" alt="CIRCLE CHART" /></a>
+                    </div>
+                    <span class="copyright">Copyright © Artists’Card Inc. All rights reserved.</span>
+                </div>
+                <div class="footer-shortcut">
+                    <div class="footer-shortcut-top">
+                        <a href="#"><img src="images/footer/btn_twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="images/footer/btn_insta.svg" alt="Instagram" /></a>
+                        <a href="#"><img src="images/footer/btn_youtube.svg" alt="Youtube" /></a>
+                    </div>
+                    <div class="footer-shortcut-bottom">
+                        <img src="images/footer/btn_apple.svg" alt="App Store" />
+                        <img src="images/footer/btn_google.svg" alt="Google Play" />
+                        <div class="app-qr-code">
+                            <img class="qr-img" src="images/footer/app_qr.svg" alt="QR Code" />
+                            <div class="qr-text">
+                                <span>아티스츠카드 앱 다운로드</span>
+                                <span>무료로 앱 다운로드하고 모바일에서 콘서트를 관람해보세요!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             <!-- //하단 -->
         </div>
     </body>
