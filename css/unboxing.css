@@ -1,0 +1,20 @@
+.unboxing .inner {
+    padding: 0 50px;
+}
+.unboxing-mid {
+}
+.unboxing-album {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.unboxing-link {
+    width: calc(100% / 3);
+    height: 440px;
+    background: pink;
+}
+
+.unboxing-link img {
+    width: 100%;
+    border-radius: 5px;
+}

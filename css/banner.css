@@ -1,0 +1,23 @@
+.banner {
+    padding-bottom: 60px;
+}
+.banner-swiper {
+}
+.banner-swiper a {
+    display: block;
+    height: 180px;
+    text-align: center;
+    overflow: hidden;
+}
+.banner-swiper a img {
+    height: 100%;
+    object-fit: cover;
+}
+.banner-1 {
+    background: url(../images/banner/banner_1_cover.webp) no-repeat center;
+    background-size: cover;
+}
+.banner-2 {
+    background: url(../images/banner/banner_2_cover.webp) no-repeat center;
+    background-size: cover;
+}

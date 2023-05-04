@@ -23,50 +23,55 @@
         <link rel="stylesheet" href="css/reset.css" />
         <script src="js/prefixfree.min.js"></script>
         <script src="js/respond.min.js"></script>
-        <link rel="stylesheet" href="css/style.css" />
         <script src="js/header.js"></script>
+        <script src="js/slider.js" type="module"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
         <div class="wrap">
             <!-- 상단 -->
-
             <header class="header">
-                <div class="inner">
-                    <div class="header-top">
-                        <div class="header-top-container">
-                            <a href="#">SUPPORT</a>
-                            <a href="#">ABOUT</a>
-                            <div class="header-lang-selector">
-                                <span>대한민국 / KRW</span>
-                                <img class="selector-arrow" src="images/header/selector_arrow.svg" />
-                            </div>
-                            <div class="header-lang-container">
-                                <ul class="header-lang-list"></ul>
-                            </div>
+                <div class="header-top">
+                    <div class="header-top-container">
+                        <a href="#">SUPPORT</a>
+                        <a href="#">ABOUT</a>
+                        <div class="header-lang-selector">
+                            <span>대한민국 / KRW</span>
+                            <img class="selector-arrow" src="images/header/selector_arrow.svg" />
+                        </div>
+                        <div class="header-lang-container">
+                            <ul class="header-lang-list"></ul>
                         </div>
                     </div>
-                    <div class="header-bottom">
-                        <div class="header-bottom-left">
-                            <img class="logo" src="images/header/logo.svg" />
-                            <div class="header-bottom-left-menu">
-                                <a href="#">스페셜</a>
-                                <a href="#">스토어</a>
-                                <a href="#">언박싱</a>
-                            </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-left">
+                        <img class="logo" src="images/header/logo.svg" />
+                        <div class="header-bottom-left-menu">
+                            <a href="#">스페셜</a>
+                            <a href="#">스토어</a>
+                            <a href="#">언박싱</a>
                         </div>
-                        <div class="header-bottom-right">
-                            <img class="btn-search" src="images/header/btn_search.svg" />
-                            <img class="btn-menu" src="images/header/btn_menu.svg" />
-                            <a class="btn-login" href="#">로그인 / 가입</a>
-                        </div>
+                    </div>
+                    <div class="header-bottom-right">
+                        <img class="btn-search" src="images/header/btn_search.svg" />
+                        <img class="btn-menu" src="images/header/btn_menu.svg" />
+                        <a class="btn-login" href="#">로그인 / 가입</a>
                     </div>
                 </div>
             </header>
             <!-- //상단 -->
             <!-- 슬라이더 -->
-            <section class="slider"></section>
+            <section class="slider">
+                <div class="swiper swiper-slider">
+                    <div class="swiper-wrapper"></div>
+                    <img class="swiper-btn swiper-btn-prev" src="images/slider/prev.svg" />
+                    <img class="swiper-btn swiper-btn-next" src="images/slider/next.svg" />
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
             <!-- //슬라이더 -->
             <!-- 바로가기 -->
             <section class="shortcut">
@@ -186,7 +191,8 @@
             <section class="project">
                 <div class="inner">
                     <div class="project-title">
-                    <img src="images/project/pj_img.png" alt="프로젝트 타이틀" /></div>
+                        <img src="images/project/pj_img.png" alt="프로젝트 타이틀" />
+                    </div>
                     <div class="project-main">
                         <div class="pj-one">
                             <img src="images/project/pj_one.png" alt="프로젝트1" />
@@ -200,6 +206,7 @@
                             <span class="d-day-info">TAN(티에이엔) - 1st Anniversary Special Album [ESSEGE] (랜덤) OFFLINE & VIDEO CALL FANSIGN EVENT</span><br />
                             <span class="d-day-text-two">TAN(티에이엔) - 1st Anniversary Special Album [ESSEGE] (랜덤)을 구매하고, 미공개 포토카드, 미공개 영상편지, 팬사인회/영상통화 응모 기회까지 놓치지 마세요!</span>
                         </div>
+                    </div>
                 </div>
             </section>
             <!-- //프로젝트-->
@@ -215,7 +222,7 @@
                         <span>내가 좋아하는 아티스트의 굿즈를 찾아보아요!</span>
                     </div>
                     <div class="artist-mid">
-                        <ul>
+                        <ul class="artist-list">
                             <li>
                                 <a href="#"
                                     ><div class="artist-img">
@@ -275,24 +282,122 @@
                 <div class="swiper banner-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="banner-1"><img src="images/banner/banner_1_cover.webp" alt="배너슬라이드1" /></a>
+                            <a href="#" class="banner-1"><img src="images/banner/banner_1.png" alt="배너슬라이드1" /></a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="banner-2"><img src="images/banner/banner_2_cover.webp" alt="배너슬라이드2" /></a>
+                            <a href="#" class="banner-2"><img src="images/banner/banner_2.png" alt="배너슬라이드2" /></a>
                         </div>
                     </div>
                 </div>
                 <script>
                     var swiper = new Swiper(".banner-swiper", { loop: true });
                 </script>
-                ,
             </section>
             <!-- //배너 -->
             <!-- 언박싱 TV -->
-            <section class="unboxing"></section>
+            <section class="unboxing">
+                <div class="inner">
+                    <div class="unboxing-top">
+                        <div class="unboxing-logo">
+                            <svg xmlns="" width="182" height="36" viewBox="0 0 182 36" style="fill: var(--ac-white)">
+                                <g data-name="UNBOXING TV">
+                                    <path d="M0 0h182v36H0z" style="fill: none"></path>
+                                    <path
+                                        data-name="\uD328\uC2A4 3010"
+                                        d="M9.282.364c5.356 0 8.554-2.808 9.646-8.242L20.982-18.2h-5.07l-2 10.01c-.624 3.068-1.846 4.29-4 4.29-1.95 0-3.016-.91-3.016-2.86a7.268 7.268 0 0 1 .156-1.43l2-10.01H3.9L1.872-8.112a10.338 10.338 0 0 0-.208 1.924c0 4.03 2.86 6.552 7.618 6.552zm22.958-14.69a6.422 6.422 0 0 0-4.42 1.69l.286-1.456h-4.68L20.618 0h4.94l1.4-6.968c.442-2.158 1.612-3.172 3.3-3.172 1.326 0 1.95.65 1.95 1.872a4.123 4.123 0 0 1-.1.936L30.654 0h4.94l1.56-7.8a8.447 8.447 0 0 0 .182-1.742c0-3.146-2.08-4.784-5.096-4.784zm17.758 0a5.744 5.744 0 0 0-3.744 1.3l1.246-6.266h-4.94L38.714 0h4.706l.39-2c.858 1.56 2.47 2.236 4.5 2.236 4.212 0 7.644-3.458 7.644-8.164A6 6 0 0 0 50-14.326zM47.606-3.744a2.473 2.473 0 0 1-2.678-2.678c0-2.366 1.4-3.952 3.354-3.952a2.493 2.493 0 0 1 2.678 2.7c0 2.344-1.404 3.93-3.354 3.93zm17 3.978c5.044 0 8.658-3.484 8.658-8.164 0-3.874-2.886-6.4-7.384-6.4-5.044 0-8.658 3.484-8.658 8.138.004 3.878 2.89 6.426 7.388 6.426zm.294-3.978a2.453 2.453 0 0 1-2.652-2.678c0-2.366 1.378-3.952 3.354-3.952a2.473 2.473 0 0 1 2.652 2.7c-.004 2.344-1.382 3.93-3.354 3.93zm26.178-10.348h-5.434L82.29-10.5l-1.872-3.588h-5.174l3.718 6.864L71.916 0h5.59l3.406-3.692L82.836 0h5.252l-3.822-6.994zm4.628-1.56a2.9 2.9 0 0 0 3.2-2.886c0-1.352-1.118-2.366-2.86-2.366a2.883 2.883 0 0 0-3.174 2.804 2.554 2.554 0 0 0 2.834 2.448zM89.752 0h4.914l2.808-14.092H92.56zm19.734-14.326a6.422 6.422 0 0 0-4.42 1.69l.286-1.456h-4.68L97.864 0h4.94l1.4-6.968c.442-2.158 1.612-3.172 3.3-3.172 1.326 0 1.95.65 1.95 1.872a4.123 4.123 0 0 1-.1.936L107.9 0h4.94l1.56-7.8a8.448 8.448 0 0 0 .182-1.742c0-3.146-2.082-4.784-5.096-4.784zm19.942.234-.442 2.236c-.78-1.794-2.5-2.47-4.524-2.47a7.549 7.549 0 0 0-7.722 7.592 5.854 5.854 0 0 0 6.16 6.006 5.7 5.7 0 0 0 3.926-1.43l-.1.468c-.39 2.028-1.508 3.172-4.056 3.172a8.047 8.047 0 0 1-4.786-1.456l-2.21 3.432a11.848 11.848 0 0 0 6.864 1.82c4.966 0 8.19-2.288 9.308-7.878l2.288-11.492zm-5.07 9.412c-1.664 0-2.652-.91-2.652-2.288a3.221 3.221 0 0 1 3.354-3.406c1.664 0 2.626.936 2.626 2.314a3.194 3.194 0 0 1-3.328 3.38zM146.146 0h5.148l2.834-14.118h5.564l.832-4.082h-16.3l-.832 4.082h5.59zm28.99-18.2L167.7-6.37l-2.6-11.83h-5.278L163.956 0h5.07l11.414-18.2z"
+                                        transform="translate(.336 25.813)"
+                                        style="fill: rgb(8, 8, 13)"
+                                    ></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="unboxing-mid">
+                        <div class="unboxing-album">
+                            <div class="unboxing-link">
+                                <a href="#">
+                                    <img src="images/unboxing/unboxing_1.jpg" alt="링크1" />
+                                    <span>[4K/Hi-Res] UNBOXING TWICE Ready To Be | 12TH MINI ALBUM</span>
+                                    <span>2023.03.10</span>
+                                </a>
+                                <a href="#"></a>
+                            </div>
+                            <div class="unboxing-link">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                            <div class="unboxing-link">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- //언박싱 TV -->
             <!-- 하단 -->
-            <footer class="footer"></footer>
+            <footer class="footer">
+                <div class="footer-info">
+                    <div class="footer-info-menu">
+                        <a href="#">회사 소개</a>
+                        <a href="#" class="footer-span-bold">개인정보 처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">유료 이용약관</a>
+                        <a href="#">쿠키정책</a>
+                        <a href="#">법적 고지</a>
+                        <a href="#">서비스 소개</a>
+                    </div>
+                    <div class="footer-info-text-container">
+                        <div class="footer-info-text">
+                            <span>사업자등록번호 :</span>
+                            <span>558-88-00394</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>통신판매업등록번호 :</span>
+                            <span>제 2018-성남수정-0398호</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>대표 :</span>
+                            <span>정연승</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>회사명 :</span>
+                            <span>(주)아티스츠카드</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>주소 :</span>
+                            <span>경기도 성남시 수정구 창업로 54 기업성장센터 523호</span>
+                        </div>
+                        <div class="footer-info-text">
+                            <span>문의 :</span>
+                            <span>contact@artistscard.com</span>
+                        </div>
+                    </div>
+                    <div class="company-container">
+                        <a href="#"><img src="images/footer/hanteo.svg" alt="HANTEO" /></a>
+                        <a href="#"><img src="images/footer/circle_chart.svg" alt="CIRCLE CHART" /></a>
+                    </div>
+                    <span class="copyright">Copyright © Artists’Card Inc. All rights reserved.</span>
+                </div>
+                <div class="footer-shortcut">
+                    <div class="footer-shortcut-top">
+                        <a href="#"><img src="images/footer/btn_twitter.svg" alt="Twitter" /></a>
+                        <a href="#"><img src="images/footer/btn_insta.svg" alt="Instagram" /></a>
+                        <a href="#"><img src="images/footer/btn_youtube.svg" alt="Youtube" /></a>
+                    </div>
+                    <div class="footer-shortcut-bottom">
+                        <img src="images/footer/btn_apple.svg" alt="App Store" />
+                        <img src="images/footer/btn_google.svg" alt="Google Play" />
+                        <div class="app-qr-code">
+                            <img class="qr-img" src="images/footer/app_qr.svg" alt="QR Code" />
+                            <div class="qr-text">
+                                <span>아티스츠카드 앱 다운로드</span>
+                                <span>무료로 앱 다운로드하고 모바일에서 콘서트를 관람해보세요!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
             <!-- //하단 -->
         </div>
     </body>
