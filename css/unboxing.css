@@ -1,20 +1,73 @@
 .unboxing .inner {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 }
 .unboxing-mid {
 }
 .unboxing-album {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
 }
 .unboxing-link {
     width: calc(100% / 3);
     height: 440px;
-    background: pink;
 }
-
-.unboxing-link img {
+.mv-img {
+    position: relative;
+    margin-bottom: 20px;
+}
+.mv-img img {
     width: 100%;
     border-radius: 5px;
+}
+.mv-img svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.mv-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mv-title span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+.mv-title p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+}
+.mv-info {
+    display: flex;
+    align-items: center;
+}
+.mv-info-img {
+}
+.mv-info-img img {
+    width: 72px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.mv-info-artist {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: rgb(170, 170, 170);
+    margin-bottom: 4px;
+}
+.mv-info-artist img {
+    height: 20px;
+    margin-right: 8px;
+}
+.mv-info-name {
+    font-size: 13px;
 }
