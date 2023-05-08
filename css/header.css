@@ -15,7 +15,8 @@
 .header-top-container {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
+    gap: 0 30px;
     height: 100%;
     max-width: 1360px;
     padding: 0 40px;
@@ -23,7 +24,6 @@
 }
 
 .header-top-container > * {
-    margin-left: 30px;
     color: #707084;
     font-size: 11px;
 }
@@ -48,7 +48,16 @@
     margin: 0 auto;
 }
 
-.header-bottom-left,
+.header-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+}
+
+.header-bottom-left-menu {
+    display: flex;
+}
+
 .header-bottom-right {
     display: flex;
     align-items: center;
@@ -58,10 +67,6 @@
 .btn-search,
 .btn-menu {
     cursor: pointer;
-}
-
-.header-bottom-left-menu {
-    margin-left: 40px;
 }
 
 .header-bottom-left-menu > a {
