@@ -97,6 +97,14 @@
     top: 35px;
 }
 
+.show {
+    display: block;
+}
+
+.transform-180 {
+    transform: rotate(-180deg);
+}
+
 .header-lang-item {
     margin-top: 15px;
 }
