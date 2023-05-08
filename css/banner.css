@@ -21,3 +21,8 @@
     background: url(../images/banner/banner_2_cover.webp) no-repeat center;
     background-size: cover;
 }
+@media screen and (max-width: 720px) {
+    .banner {
+        display: none;
+    }    
+}
