@@ -5,39 +5,29 @@
 
 .recent-title {
     display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
 }
 
-.recent .recent-main {
-    width: 100%;
+.recent-main {
+    display: flex;
+    margin: 0px auto 40px;
 }
 
-.recent-main > .recent-list {
-    width: 100%;
+.recent-list {
+    display: flex;
 }
 
 .recent-list li {
     width: 256px;
     height: auto;
-    float: left;
     padding: 0 10px;
 }
-
-/* .recent-list > li > a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  } */
 
 .img-top {
     position: relative;
     height: 236px;
     width: 100px;
-}
-
-.img-top > img {
-    height: 100%;
 }
 
 .img-top > .order {
@@ -52,8 +42,23 @@
     border-radius: 4px;
 }
 
-.recent-main {
-    display: block;
+.img-top > img {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.img-top > .recent_heart {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    bottom: 10px;
+    right: -120px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0);
+}
+
+.img-top > .recent_heart:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .brand-info {
@@ -114,12 +119,12 @@
     margin: 5px;
 }
 
-.won-info {
-    margin-top: 7px;
-}
-
 .won {
     font-size: 15px;
+}
+
+.won-info {
+    margin-top: 7px;
 }
 .price {
     font-size: 18px;
@@ -127,14 +132,14 @@
     margin-left: 5px;
 }
 
-.price-bt {
-    color: #999999;
-    font-size: 12px;
-}
-
 .percent {
     font-size: 18px;
     color: #6727ba;
     margin: 5px;
     font-weight: 600;
+}
+
+.buynow {
+    color: #999999;
+    font-size: 12px;
 }

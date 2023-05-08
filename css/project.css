@@ -1,4 +1,7 @@
 /* 프로젝트 */
+.project-title {
+    margin: 0 5px;
+}
 
 .project-main {
     display: flex;
@@ -8,19 +11,11 @@
     padding-right: 10px;
 }
 
-.pj-one > img {
-    display: block;
-    margin-top: 10px;
-    width: 407px;
-    height: 229px;
-    margin-bottom: 10px;
-}
-
-.pj-two {
+.pj-banner {
     width: 407px;
 }
 
-.pj-two > img {
+.pj-banner > img {
     display: block;
     margin-top: 10px;
     width: 100%;
@@ -54,23 +49,11 @@
     margin-bottom: 5px;
 }
 
-.pj-two-r {
-    margin-left: 20px;
-}
-
-.d-day-text-one {
-    width: 407px;
-    margin-top: -15px;
-    display: block;
-    color: #999999;
-    font-size: 13px;
-}
-
-.d-day-text-two {
+.d-day-text {
     line-height: 1.2;
     position: relative;
     width: 407px;
-    margin-top: -10px;
+    margin-top: 10px;
     color: #999999;
     font-size: 13px;
     display: -webkit-box;
