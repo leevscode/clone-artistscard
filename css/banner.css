@@ -5,7 +5,7 @@
 }
 .banner-swiper a {
     display: block;
-    height: 180px;
+    height: 100%;
     text-align: center;
     overflow: hidden;
 }
