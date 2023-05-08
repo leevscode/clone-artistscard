@@ -1,4 +1,7 @@
 /* 프로젝트 */
+.project-title {
+    margin: 0 5px;
+}
 
 .project-main {
     display: flex;
@@ -8,19 +11,11 @@
     padding-right: 10px;
 }
 
-.pj-one > img {
-    display: block;
-    margin-top: 10px;
-    width: 407px;
-    height: 229px;
-    margin-bottom: 10px;
-}
-
-.pj-two {
+.pj-banner {
     width: 407px;
 }
 
-.pj-two > img {
+.pj-banner > img {
     display: block;
     margin-top: 10px;
     width: 100%;
@@ -52,10 +47,6 @@
 
 .d-day-title {
     margin-bottom: 5px;
-}
-
-.pj-two-r {
-    margin-left: 20px;
 }
 
 .d-day-text {
