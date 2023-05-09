@@ -75,6 +75,10 @@
     }
 }
 @media screen and (max-width: 720px) {
+    .unboxing .inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .unboxing-album {
         flex-wrap: wrap;
     }

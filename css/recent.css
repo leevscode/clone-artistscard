@@ -16,12 +16,12 @@
 
 .recent-list {
     display: flex;
+    gap: 10px;
 }
 
 .recent-list li {
     width: calc(100% / 5);
     height: auto;
-    padding: 0 10px;
     transition: all 0.5s;
 }
 
@@ -169,5 +169,5 @@
     }
     ::-webkit-scrollbar {
         display: none;
-}
+    }
 }

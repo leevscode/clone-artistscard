@@ -7,8 +7,6 @@
     display: flex;
     gap: 20px;
     padding-bottom: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .pj-banner {
@@ -76,6 +74,5 @@
 }
 
 @media screen and (max-width: 720px) {
-
 }
 /* //프로젝트 */
