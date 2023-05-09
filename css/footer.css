@@ -1,10 +1,15 @@
 .footer {
     width: 100%;
-    padding: 60px 40px;
     background: rgb(238, 238, 238);
+    white-space: nowrap;
+}
+
+.footer-container {
+    max-width: 1360px;
     display: flex;
     justify-content: space-between;
-    white-space: nowrap;
+    padding: 60px 40px;
+    margin: 0 auto;
 }
 
 .footer-info {
@@ -57,12 +62,11 @@
 }
 
 .company-container {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .company-container > a {
     display: inline-block;
-    height: 29.9px;
 }
 
 .company-container > a:last-child {
@@ -79,8 +83,7 @@
 .footer-shortcut-top {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 70px;
-    height: 35.9px;
+    margin-bottom: 75px;
 }
 
 .footer-shortcut-top a {
@@ -145,7 +148,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .footer {
+    .footer-container {
         flex-direction: column;
     }
 
@@ -159,7 +162,7 @@
 }
 
 @media screen and (max-width: 720px) {
-    .footer {
+    .footer-container {
         padding: 40px 20px;
     }
 
