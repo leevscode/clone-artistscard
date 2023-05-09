@@ -68,6 +68,12 @@
         row-gap: 20px;
     }
     .artist-list li {
+        width: calc(92% / 5);
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .artist-list li {
         width: calc(94% / 4);
     }
 }
