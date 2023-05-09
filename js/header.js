@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let selectorArrow = document.querySelector(".selector-arrow");
     let langList = document.querySelector(".header-lang-container");
 
+    let sideMenuBtn = document.querySelector(".btn-menu");
+    let side = document.querySelector(".side");
+
     document.addEventListener("click", (e) => {
         let isLangSelectorClicked = e.target === langSelector || e.target.parentElement === langSelector;
         let isLangListClicked = e.target === langList || e.target.parentElement === langList;
@@ -32,6 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (!isLangListClicked) {
             langList.classList.remove("show");
             selectorArrow.classList.remove("transform-180");
+        }
+
+        if (e.target === sideMenuBtn) {
+            document.querySelector("body").style.overflow = "hidden";
+            side.classList.add("show");
         }
     });
 });
