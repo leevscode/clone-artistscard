@@ -1,7 +1,7 @@
 /* 바로가기 */
 .shortcut {
     display: block;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .shortcut-main {
@@ -40,6 +40,12 @@
 }
 
 @media screen and (max-width: 720px) {
+    .shortcut {
+        margin-top: 30px;
+    }
+    .shortcut > .inner {
+        padding-bottom: 40px;
+    }
     .shortcut-main {
         flex-wrap: wrap;
         row-gap: 20px;
