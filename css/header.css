@@ -3,7 +3,7 @@
     width: 100%;
     position: fixed;
     background: #fafafa;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .header-top {
@@ -95,10 +95,6 @@
     display: none;
     position: absolute;
     top: 35px;
-}
-
-.show {
-    display: block;
 }
 
 .transform-180 {
