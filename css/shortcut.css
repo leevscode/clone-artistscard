@@ -4,11 +4,15 @@
     margin-top: 60px;
 }
 
+.shortcut > .inner {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .shortcut-main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
-    padding-top: 9px;
 }
 
 .shortcut-main a {
@@ -22,7 +26,7 @@
     width: 80px;
     height: 80px;
     text-align: center;
-    margin: 0 15px;
+    /* margin: 0 15px; */
     border-radius: 20px;
     margin-bottom: 7px;
 
@@ -52,6 +56,7 @@
     }
     .shortcut-main a {
         width: 25%;
+        min-width: 70px;
     }
 }
 

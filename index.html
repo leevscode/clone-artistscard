@@ -27,6 +27,7 @@
         <script src="js/header.js"></script>
         <script src="js/slider.js" type="module"></script>
         <script src="js/side.js"></script>
+        <script src="js/search.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <link rel="stylesheet" href="css/style.css" />
@@ -65,6 +66,58 @@
                 </div>
             </header>
             <!-- //상단 -->
+            <!-- 검색 -->
+            <div class="search">
+                <div class="search-container">
+                    <div class="search-content">
+                        <form class="search-bar">
+                            <div class="search-input">
+                                <img class="search-input-img" src="images/search/search.svg" />
+                                <input class="search-input-text" type="text" placeholder="찾고 있는 굿즈를 검색해 보세요." oninput="onSearchInput()" />
+                                <img class="search-clear-btn" src="images/search/search_clear.svg" />
+                            </div>
+                            <span class="search-cancel-btn">취소</span>
+                        </form>
+                        <div class="recent-search">
+                            <div class="search-top">
+                                <span class="search-title">최근 검색어</span>
+                                <span class="recent-search-clear">모두 삭제</span>
+                            </div>
+                            <ul class="recent-search-list">
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                                <li class="recent-search-item"><span>testtest</span></li>
+                            </ul>
+                        </div>
+                        <div class="recommend-search">
+                            <div class="search-top">
+                                <span class="search-title">추천 검색어</span>
+                            </div>
+                            <ul class="recommend-search-list">
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                                <li class="recommend-search-item"><img class="recommend-search-item-img" src="images/search/recommend_search.svg" /><span>TESTTEST</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //검색 -->
             <!-- 사이드 메뉴 -->
             <div class="side">
                 <div class="side-container side-main">

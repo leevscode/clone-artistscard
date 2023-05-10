@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let langList = document.querySelector(".header-lang-container");
 
     let sideMenuBtn = document.querySelector(".btn-menu");
+    let searchBtn = document.querySelector(".btn-search");
     let sideMain = document.querySelector(".side-main");
+    let searchSection = document.querySelector(".search");
 
     document.addEventListener("click", (e) => {
         let isLangSelectorClicked = e.target === langSelector || e.target.parentElement === langSelector;
@@ -40,6 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === sideMenuBtn) {
             document.querySelector("body").style.overflow = "hidden";
             sideMain.classList.add("show");
+        }
+
+        if (e.target === searchBtn) {
+            searchSection.classList.add("show");
         }
     });
 });
