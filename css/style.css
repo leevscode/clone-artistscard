@@ -93,6 +93,10 @@ body {
     display: block;
 }
 
+.hide {
+    display: none;
+}
+
 @keyframes open {
     0% {
         opacity: 0;
