@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let countryContainer = document.querySelector(".header-lang-list");
+    let headerLangList = document.querySelector(".header-lang-list");
 
     countries.forEach((country, index) => {
         let countryItem = `
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </a>
             </li>`;
 
-        countryContainer.insertAdjacentHTML("beforeend", countryItem);
+        headerLangList.insertAdjacentHTML("beforeend", countryItem);
     });
 
     let selectedCountry = document.querySelector(".header-lang-item-container > span");
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let langList = document.querySelector(".header-lang-container");
 
     let sideMenuBtn = document.querySelector(".btn-menu");
-    let side = document.querySelector(".side");
+    let sideMain = document.querySelector(".side-main");
 
     document.addEventListener("click", (e) => {
         let isLangSelectorClicked = e.target === langSelector || e.target.parentElement === langSelector;
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (e.target === sideMenuBtn) {
             document.querySelector("body").style.overflow = "hidden";
-            side.classList.add("show");
+            sideMain.classList.add("show");
         }
     });
 });
