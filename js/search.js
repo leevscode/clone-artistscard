@@ -1,19 +1,4 @@
-const onSearchInput = () => {
-    let searchInput = document.querySelector(".search-input-text");
-    let searchClearBtn = document.querySelector(".search-clear-btn");
-    let searchRecentRecommend = document.querySelector(".search-recent-recommend");
-    let searchResult = document.querySelector(".search-result");
-
-    if (searchInput.value !== "") {
-        searchClearBtn.classList.add("show");
-        searchRecentRecommend.classList.add("hide");
-        searchResult.classList.add("show");
-    } else {
-        searchClearBtn.classList.remove("show");
-        searchRecentRecommend.classList.remove("hide");
-        searchResult.classList.remove("show");
-    }
-};
+let onSearchInput;
 
 document.addEventListener("DOMContentLoaded", () => {
     let searchSection = document.querySelector(".search");
@@ -22,6 +7,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let searchCancelBtn = document.querySelector(".search-cancel-btn");
     let searchRecentRecommend = document.querySelector(".search-recent-recommend");
     let searchResult = document.querySelector(".search-result");
+
+    onSearchInput = () => {
+        if (searchInput.value !== "") {
+            searchClearBtn.classList.add("show");
+            searchRecentRecommend.classList.add("hide");
+            searchResult.classList.add("show");
+        } else {
+            searchClearBtn.classList.remove("show");
+            searchRecentRecommend.classList.remove("hide");
+            searchResult.classList.remove("show");
+        }
+    };
 
     const resetSearch = () => {
         searchInput.value = "";
