@@ -23,16 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
     let searchRecentRecommend = document.querySelector(".search-recent-recommend");
     let searchResult = document.querySelector(".search-result");
 
-    searchClearBtn.addEventListener("click", () => {
+    const resetSearch = () => {
         searchInput.value = "";
         searchClearBtn.classList.remove("show");
         searchRecentRecommend.classList.remove("hide");
         searchResult.classList.remove("show");
+    };
+
+    searchClearBtn.addEventListener("click", () => {
+        resetSearch();
     });
 
     document.addEventListener("click", (e) => {
         if (e.target === searchCancelBtn || e.target === searchSection) {
             searchSection.classList.remove("show");
+            resetSearch();
         }
     });
 
