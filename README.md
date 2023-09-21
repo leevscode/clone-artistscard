@@ -1,5 +1,4 @@
-###미니 프로젝트 clone-artistscard
-1. 프로젝트명 : clone-artistscard
+미니 프로젝트 clone-artistscard
 - 담당 역할 : 프론트 엔드 팀원
 - 기술 스택 : html, css, javaScript
 - 개발 인원 : 프론트엔드 3명
